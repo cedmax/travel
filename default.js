@@ -31,7 +31,7 @@ export default {
   'extras': [
     'readings',
     'movies/series',
-    'laptop',
+    'keyboard',
     'headphones',
     'speakers',
     'tablet',
