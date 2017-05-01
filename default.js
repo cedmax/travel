@@ -36,6 +36,7 @@ export default {
     'speakers',
     'tablet',
     'earplugs',
-    'watch'
+    'watch',
+    'paper-tissues'
   ]
 }
