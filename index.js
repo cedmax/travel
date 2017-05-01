@@ -11,7 +11,7 @@ if (!trip) {
   process.exit(1);
 }
 
-const store = piggyBank(`./${trip}.json`);
+const store = piggyBank(`./travels/${trip}.json`);
 
 function capitalise(string) {
   return string[0].toUpperCase() + string.slice(1);
@@ -23,13 +23,13 @@ const positions = [{
   top: 2,
   left: 1
 }, {
-  top: 2, 
+  top: 2,
   right: 1
 }, {
   bottom: 0,
   left: 1
 }, {
-  bottom: 0, 
+  bottom: 0,
   right: 1
 }]
 
@@ -64,18 +64,18 @@ class App extends Component {
       return (
         <box
           key={section}
-          label={capitalise(section)} 
+          label={capitalise(section)}
           {...Object.assign({}, positions[sectIdx], boxProps)}>
           {
             items.map((item, i) => (
-              <checkbox 
+              <checkbox
                 ref={`ref-${sectIdx}-${i}`}
                 mouse={true}
                 height={checkboxHeight}
                 keys={true}
-                top={ checkboxHeight*i } 
-                key={ item } 
-                text={ capitalise(item) } 
+                top={ checkboxHeight*i }
+                key={ item }
+                text={ capitalise(item) }
                 onCheck={() => store.set(item, true, { overwrite: true })}
                 onUncheck={() => store.set(item, false, { overwrite: true })}
                 checked={ store.get(item) } />
@@ -87,7 +87,7 @@ class App extends Component {
 
     return (
       <form {...formProps}>
-        {elements} 
+        {elements}
       </form>
     );
   }
