@@ -4,6 +4,9 @@ import { render } from 'react-blessed';
 import stuff from './default';
 import minimist from 'minimist';
 import piggyBank from 'piggy-bank';
+import mkdirp from 'mkdirp';
+
+mkdirp.sync('travels');
 
 const trip = minimist(process.argv.slice(2))._.join('_');
 if (!trip) {
