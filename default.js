@@ -37,6 +37,7 @@ export default {
     'tablet',
     'earplugs',
     'watch',
-    'paper-tissues'
+    'paper-tissues',
+    'sunglasses'
   ]
 }
