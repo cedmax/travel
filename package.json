@@ -10,7 +10,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "blessed": "^0.1.81",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "mkdirp": "^0.5.1",
     "piggy-bank": "^1.0.0",
     "react": "0.14",
